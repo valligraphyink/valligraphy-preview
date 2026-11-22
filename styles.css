@@ -173,6 +173,21 @@ h2 em { font-style: italic; }
 .lightbox figcaption { color: var(--paper); text-align: center; margin-top: 0.75rem; font-family: var(--serif); font-size: 1.4rem; }
 .lb-close { position: absolute; top: 1rem; right: 1rem; width: 2.75rem; height: 2.75rem; background: var(--paper); border: none; font-size: 1.6rem; cursor: pointer; color: var(--ink); }
 
+.typography-feature {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.typography-feature img { width: 100%; height: auto; display: block; }
+.typography-copy { max-width: 23rem; padding: 1rem; }
+.typography-copy h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1; margin: .5rem 0 .8rem; }
+.typography-copy p:last-child { color: var(--muted); margin: 0; }
+
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-areas:
